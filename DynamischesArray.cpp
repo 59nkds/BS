@@ -1,3 +1,9 @@
+/*
+Author: Shehzad Khan
+Date: 14.12.2020
+Alpha version
+*/
+
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
