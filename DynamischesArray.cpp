@@ -48,6 +48,7 @@ struct Array {
 	}
 };
 
+//functionality demonstration
 int main()
 {
 	Array a = a.create(5);
