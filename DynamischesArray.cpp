@@ -1,7 +1,7 @@
 /*
-Author: Shehzad Khan
-Date: 14.12.2020
-Version: Alpha 0.1
+author: Shehzad Khan
+date: 14.12.2020
+version: Alpha 0.1
 */
 
 #include <iostream>
