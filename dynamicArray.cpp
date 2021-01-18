@@ -10,8 +10,8 @@ version: Alpha 0.1
 using namespace std;
 
 struct Array {
-	float* data; //attribute is a pointer for values in the heap section
-	int size; //attribute will contain the size of the array
+	float* data; //this attribute is a pointer for values in the heap section
+	int size; //this attribute will contain the size of the array
 	Array create(int size) {
 		Array a;
 		a.data = new float[size]; //reserves space in the heap section
@@ -19,7 +19,7 @@ struct Array {
 		return a;
 	}
 	void destroy(Array& a) {
-		delete[] a.data; //sets reserved space free
+		delete[] a.data; //sets the reserved space free
 		a.data = nullptr;
 		a.size = 0;
 	}
@@ -31,11 +31,11 @@ struct Array {
 	void fillRandom() {
 		srand(time(nullptr));
 		for (int i = 0; i < size; i++)
-			*(data + i) = rand(); //fills array with random values
+			*(data + i) = rand(); //fills the array with random values
 	}
 	void copy(Array& b) {
 		if (size > b.size) {
-			Array c = c.create(size); //creates new array if there is not enough space in the array where the values have to be copied
+			Array c = c.create(size); //creates a new array if there is not enough space in the array where the values have to be copied
 			for (int i = 0; i < b.size; i++)
 				*(c.data + i) = *(b.data + i);
 			destroy(b);
@@ -46,7 +46,7 @@ struct Array {
 	}
 	void resize(int aSize) {
 		if (aSize < size)
-			return; //quits function if the new size is smaller than the current size of the array
+			return; //quits the function if the new size is smaller than the current size of the array
 		Array a = a.create(aSize);
 		copy(a);
 		destroy(*this);
