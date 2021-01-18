@@ -10,8 +10,8 @@ version: Alpha 0.1
 using namespace std;
 
 struct Array {
-	float* data; //this attribute is a pointer for values in the heap section
-	int size; //this attribute will contain the size of the array
+	float* data; //attribute is a pointer for values in the heap section
+	int size; //attribute will contain the size of the array
 	Array create(int size) {
 		Array a;
 		a.data = new float[size]; //reserves space in the heap section
